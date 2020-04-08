@@ -1,0 +1,18 @@
+预处理（less转换为css）
+1、github创建远程仓库grunt-demo并克隆到本地
+2、为仓库添加less分支，git checkout -b less
+3、创建html文件、css文件夹（包含一个layout.less文件）
+4、课程目的：
+     将less文件转换成浏览器支持的css文件，并且是自动化转换
+（1）为什么非要用less文件构建页面样式？
+        因为less文件中可以定义许多变量，或者函数，通过调用，方便修改代码
+（2）为什么非要将less文件转换成css文件？
+        因为浏览器不支持less文件，所以要转换一下，OK？
+5、npm init -y创建项目配置文件package.json文件
+6、全局安装grunt-cli，命令：npm i -g grunt-cli
+7、项目目录下安装grunt工具和插件，命令：npm i -D grunt grunt-contrib-less 
+8、创建并编写Gruntfile.js文件，来实现自动化
+9、执行grunt+清单名称，会出现一个dist文件夹，里面有一个css文件，即转换成功
+10、如果想实现自动化，需要将文件传送到远程仓库，通过travis-ci实现
+
+

@@ -1,0 +1,10 @@
+第16节
+1、定时器按钮组件(41-timer-button)
+
+第17节
+1、jsnotepad转到对话框(dlg-goto)
+
+
+
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>

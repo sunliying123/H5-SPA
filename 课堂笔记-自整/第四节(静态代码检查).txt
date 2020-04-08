@@ -1,0 +1,28 @@
+静态代码检查
+作用：检查代码语法错误、检查编码规范（项目团队编码风格保持一致，方便维护）
+
+一、html文件的静态代码检查（htmlhint插件）
+1、创建htmlhint分支，命令：git checkout -b htmlhint，完成之后它会有原来分支的文件们，需要删掉html和css文件夹，rm index.html 和 rm -rf css
+2、将矩形计算器的三个文件拷贝到该分支下，用cp，比如：cp index.html . 
+3、创建规则配置文件  .htmlhintrc文件
+4、在项目目录下安装插件npm i -D grunt-htmlhint
+5、修改package.json文件，继续执行npm i
+6、编辑Gruntfile.js
+7、运行grunt命令进行静态代码检查
+
+二、css文件的静态代码检查(插件：grunt-contrib-csslint)
+1、创建csslint分支，删除分支下的隐藏文件.htmlhintrc，命令：rm -rf .htmlhintrc
+2、创建规则配置文件 .csslintrc
+3、安装插件：npm i -D grunt-contrib-csslint
+4、修改package.json文件，继续执行npm i
+5、编辑Gruntfile.js文件
+6、运行grunt命令进行静态代码检查
+
+三、JS文件静态代码检查(插件：grunt-eslint)
+1、创建eslint分支,删除分支下的隐藏文件.csslintrc
+2、创建规则配置文件 .eslintrc.json
+3、安装插件：npm i -D grunt-eslint
+4、修改package.json文件，继续执行npm i
+5、编辑Gruntfile.js文件
+
+

@@ -1,0 +1,2 @@
+1、localstorage状态保持（61-store-clicking）
+2、保持图片（62-store-image）

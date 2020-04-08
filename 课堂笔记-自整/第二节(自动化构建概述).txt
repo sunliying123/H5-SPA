@@ -1,0 +1,4 @@
+一、以服务端的形式打开页面
+1、进入文件所在目录，打开命令窗口，执行browser-sync start --server --files "*.html"
+2、该过程为热加载，及如果改变文件内容，网页会自动随之改变
+3、如果文件名字不是index.html，后面加上文件路径  localhost:3000/list.html

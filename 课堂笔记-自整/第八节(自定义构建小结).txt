@@ -1,0 +1,6 @@
+一、自定义构建任务
+1、创建分支customize
+2、安装插件npm i -D grunt
+3、切换到根目录克隆仓库https://github.com/dbrockman/reformat-markdown-table
+4、切换到cd reformat-markdown-table查看文件
+5、

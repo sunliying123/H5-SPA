@@ -1,0 +1,34 @@
+实现自动化构建
+1、创建 .travis.yml文件
+文件内容
+language: node_js
+node_js:
+  - "node"
+
+after_script:
+  - gitbook build
+  - cd ./_book
+  - git init
+  - git config user.name "${USER_NAME}"
+  - git config user.email "${USER_EMAIL}"
+  - git add .
+  - git commit -m "publish gitbook"
+  - git push --force --quiet "https://${ACC_TOKEN}@${GH_REF}" master:${BRANCH}
+
+branches:
+  only:
+    - master
+2、把文件推到仓库的master分支
+3、在github找小黄点，点开，找View more details...在新标签页打开
+4、执行npm init创建项目初始化文件
+5、package.json文件修改一下
+6、将package.json文件上传仓库
+7、在Travis CI端配置5个变量：
+     （1）BRANCH   gh-pages
+     （2）GH_REF     github.com/用户名/仓库名
+     （3）USER_EMAIL    github注册的邮箱
+     （4）USER_NAME     用户名
+     （5）ACC_TOKEN最关键，如何获取？
+	github点击头像——settings——左侧导航栏底部Developer settings——
+	Personal access tokens——右上角新建——定义Note，勾选repo——底部，创建——产生的值放到travis ci
+
