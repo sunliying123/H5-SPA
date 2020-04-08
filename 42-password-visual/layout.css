@@ -1,0 +1,26 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#main{
+    width: 300px;
+}
+#pwd{
+    text-indent: 0.8em;
+    width: 200px;
+    height: 30px;
+}
+.iconfont{
+    font-size:30px
+}
+#icon{
+    position: absolute;
+    right:0;
+    top:2px;
+}
+#box{
+    position: relative;
+    width: 200px;
+}
